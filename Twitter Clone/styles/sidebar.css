@@ -1,0 +1,186 @@
+
+@media(max-width: 1200px)
+{
+	.sidebar{
+			background-color:white;
+			position: fixed;
+			bottom:0;
+			left:0;
+			top:0px;
+			
+			width: 70px;
+			
+			border-right: 1px solid lightgrey;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			padding: 5px 10px;
+			
+			overflow:auto;
+			
+	   }
+	   
+	.sidebar-icons, .Posts, .Accounts{
+
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			
+			height: 30px;	
+			padding: 10px 12px;
+			margin-top: 5px;
+			
+			border-radius: 50%;
+			cursor:pointer;
+			
+			position:relative;
+			transition:background-color 0.2s;
+			
+		  }
+		  
+	.sidebar-icons:hover, .Posts:hover, .Accounts:hover{
+					background-color:rgb(225, 232, 237);	
+				}
+				
+	.sidebar img{width:25px; z-index:5;}
+
+	.sidebar .tooltip{
+			position:absolute;
+			background-color:gray;
+			color:white;
+			padding:4px;
+			padding-bottom:0;
+			
+			border-radius:2px;
+			font-size:12px;
+			height: 15px;
+						
+			bottom:-20px;
+			
+			
+			opacity:0;
+			
+			transition: opacity 0.5s;
+			transition-delay:0.5s;
+			pointer-events:none;
+			white-space: nowrap;
+			
+			z-index: 10;
+		}
+		
+	.sidebar div:hover .tooltip{opacity:1; }
+
+	.Accounts .tooltip{ bottom:50px;}
+	.Accounts{justify-content:center;
+		padding:13px 8px;}
+	.Accounts img{ width:45px;  border-radius:50%;}
+	.AccountInfo img{display:none;}
+	.AccountInfos{display:none;}
+		
+}
+
+/*Expand*/
+@media (min-width:1200.1px)
+{
+	.header{ left:290px;}
+	.Twitter-timeline{margin-left: 200px;}
+
+	.sidebar{
+
+			position: fixed;
+			bottom:0;
+			left:0;
+			top:0px;
+			
+			width: 270px;
+			
+			border-right: 1px solid lightgrey;
+			display:flex;
+			flex-direction:column;
+			align-items:left;
+			padding: 5px 10px;
+			
+			overflow:auto;
+	   }
+	   
+    .sidebar-icons, .twitter-logo, .Posts{
+
+			display:flex;
+			flex-direction:row;
+			align-items:center;
+			justify-content:start;
+			
+			height: 30px;	
+			padding: 10px 13px;
+			margin-top: 5px;
+			
+			border-radius: 20px;
+			cursor:pointer;
+			
+			position:relative;
+			transition:background-color 0.2s;
+			
+		  }
+		  
+	.sidebar-icons:hover, .twitter-logo:hover, .Accounts:hover{
+					background-color:rgb(192,192,192);	
+				}
+				
+	.sidebar img{width:25px;}
+
+	.sidebar .tooltip{
+			position:absolute;
+			
+			padding:4px;
+			padding-bottom:0;
+			
+			
+			font-size:17px;
+			font-weight:700;
+			height: 15px;
+						
+			left:50px;
+			
+			
+			opacity:1;
+			
+			transition: opacity 0.5s;
+			pointer-events:none;
+			white-space: nowrap;
+			
+		}
+		
+	.twitter-logo{ 
+		width: 30px;
+	}
+	
+	.twitter-logo:hover{
+		border-radius:50%;}
+	
+	
+	.Posts-pic{
+		display:none;
+		}
+		
+	.Posts{ 
+		background-color:rgb(29 161 242);
+		color:white;
+		border-radius:20px;
+		height:25px;
+		}
+		
+	.Posts .tooltip{ 
+		left:40%;
+		text-align:center;}
+		
+	.Posts:hover{ opacity:0.7;}
+	
+	.Accounts img{ width:40px; border-radius:50%;}
+	.Accounts .tooltip{display:none}
+	.Accounts{ padding:10px;
+		margin-top:5px;
+		display:flex;
+		border-radius:20px;
+		align-items:center;}
+	.AccountInfo img{width:20px;}
+}

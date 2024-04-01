@@ -1,0 +1,21 @@
+/*Twitter blue = rgb(29 161 242)
+  very light grey = rgb(225, 232, 237)*/
+
+body{
+		margin-top:51px;
+		margin-left:90px;
+	
+		font-family:Arial;
+	}
+	
+span{
+		padding-top:15px;
+		padding-bottom: 15px;
+		border-bottom: 3px solid rgb(29 161 242);/*Twitter blue*/
+		width: fit-content;
+		
+	}
+	
+p{ margin:0;}
+
+h1{margin-top:5px;}
