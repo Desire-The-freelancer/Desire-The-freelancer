@@ -1,0 +1,99 @@
+/*responsive layout*/
+@media (min-width:1000px){
+	.portfolio-design{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding:20px;
+	row-gap:10px;}
+	}
+	
+@media (min-width:701px) and (max-width:1001px){
+	.portfolio-design{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding:20px;
+	row-gap:10px;}
+}
+
+@media (max-width: 700px){
+	.portfolio-design{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	padding:20px;
+	row-gap:10px;}
+}
+	
+	
+/*Design*/
+
+.portfolio-design div{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-between;
+	
+	border:2px solid black;
+	max-width: 250px;
+	margin-left:15px;
+	padding: 20px 10px;
+	transition: 0.5s;
+	
+	}
+
+	/*Hover effect*/
+.twitter-card:hover{
+	border-color:#00BFFF;
+	}
+	
+.twitter-card:hover button{background-color: #00BFFF;}	
+.twitter-card:hover h2{color:#00BFFF;}
+	
+	/*whats app*/
+.whatsapp-card:hover{
+	border-color:green;
+	}
+	
+.whatsapp-card:hover button{background-color: green;}	
+.whatsapp-card:hover h2{color:green;}
+	
+	/*facebook*/
+.facebook-card:hover{
+	border-color:blue;
+	
+	}
+
+.facebook-card:hover button{background-color: blue;}	
+.facebook-card:hover h2{color:blue;}
+
+/*youtube*/
+.youtube-card:hover{
+	border-color:red;
+	
+	}
+
+.youtube-card:hover button{background-color: red;}	
+.youtube-card:hover h2{color:red;}
+
+/*General*/
+p, h2{margin:0;
+	margin-bottom: 15px;}
+p{margin-left:10px;
+  margin-right:8px;
+  font-size:15px;}
+	
+button{
+	background-color:black;
+	color:white;
+	border:none;
+	border-radius: 20px;
+	width:100%;
+	padding: 10px;
+	text-transform:uppercase;
+	
+	cursor:pointer;
+	transition:0.15s;
+	}
+
+button:hover{
+	opacity:0.8;
+	text-decoration:underline;}
