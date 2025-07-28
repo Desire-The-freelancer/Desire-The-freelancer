@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>To do list</title>
+
+        <style>
+            .name,
+            .DOB,
+            .add{
+                height: 50px;
+                width: 200px;
+                margin-right: 10px;
+            }
+            .add, .delete{
+                color:white;
+                background-color: green;
+                width: 150px;
+                border: none;
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+        <h1>To Do List</h1>
+
+        <div>
+            <input class="name js-name" placeholder="Name of to-do">
+            <input class="DOB js-DOB" type="date">
+            <button class="add js-add">Add</button>
+        </div>
+
+        <div class="js-list list"></div>
+    </body>
+
+    <script>
+        const todoList = JSON.parse(localStorage.getItem('todoList'))||[{
+	name:'make dinner', 
+	dueDate: '2022-12-22'},
+	{name:'wash dishes',
+	dueDate: '2022-12-22'}];
+
+     renderList();
+
+    function renderList(){
+        let todoListHTML = '';
+
+        todoList.forEach((todoObjext, index) => {
+            const{name, dueDate} = todoObjext;
+        
+            const html = `
+            <div>${name}</div>
+            <div>${dueDate}</div>
+            <button class="js-delete">Delete</button>
+            `;
+
+            todoListHTML += html;
+        });
+
+        document.querySelector('.js-list').innerHTML = todoListHTML;
+        localStorage.removeItem('todoList');
+        localStorage.setItem('todoList',JSON.stringify(todoList));
+
+        document.querySelectorAll('.js-delete').forEach((deleteList, index) => {
+            deleteList.addEventListener('click',()=>{
+                todoList.splice(index,1);
+                renderList();
+            })
+        });
+
+    }
+
+            document.querySelector('.js-add')
+	.addEventListener('click', () => {
+		addTodo();
+	})
+
+
+function addTodo(){
+	const inputElement = document.querySelector('.js-name');
+	const name = inputElement.value;
+	const dateInputElement = document.querySelector('.js-DOB');
+	const dueDate = dateInputElement.value;
+	
+	todoList.push({
+		//name:name,
+		//dueDate: dueDate,
+		name,
+		dueDate
+	});
+	
+	inputElement.value = '';
+	
+	renderList();
+	
+	localStorage.setItem('todoList',JSON.stringify(todoList));
+}
+    </script>
+</html>
