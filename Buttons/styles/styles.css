@@ -1,0 +1,97 @@
+.hover button{
+	background-color:orange;
+	border-radius:5px;
+	border:none;
+	padding:15px 40px;
+	color:white;
+	cursor:pointer;
+	transition:all 0.5s;
+	width:200px;
+	box-sizing:border-box}
+				
+.hover button span{
+	cursor:pointer;
+	font-family:Arial;
+	font-size:25px;
+	position:relative;
+	transition: 0.5s;
+	display:inline-block;
+		}
+		
+.hover button span:after{
+	position:absolute;
+	right:-20px;
+	content: '\00bb';
+	opacity: 0;
+	top:0;
+	transition:0.5s;
+}
+		
+.hover button:hover span{
+	
+	padding-right:25px;
+	}
+	
+.hover button:hover span:after{
+	opacity:1;
+	right:0;}
+	
+/*Shadow button*/
+.shadow button{
+	cursor:pointer;
+	color:white;
+	background-color:#228B22;
+	width:200px;
+	box-sizing:border-box;
+	border-radius:10px;
+	border:none;
+	padding:15px 0px;
+	font-size:25px;
+	
+	box-shadow: 0 10px 0px rgba(0, 0, 0, 0.3);
+	transition: 0.2s;
+	}
+	
+.shadow button:hover{
+	background-color:darkgreen}
+	
+.shadow button:active{
+	box-shadow: 0 5px 0px rgba(0, 0, 0, 0.6);
+	transform: translateY(5px);
+	
+	}
+	
+/*Ripple*/
+.ripple button{
+	cursor:pointer;
+	color:white;
+	background-color:#228B22;
+	width:200px;
+	box-sizing:border-box;
+	
+	border:none;
+	overflow:hidden;
+	padding:20px 0px;
+	font-size:25px;
+	position:relative;
+	}
+	
+.ripple button:after{
+	content:"";
+	display:block;
+	background-color:#f1f1f1;
+	position:absolute;
+	padding-top:300%;
+	padding-left:350%;
+	margin-top:-120%;
+	margin-left:-20px !important;
+	transition: all 0.8s;
+	opacity:0;}
+	
+.ripple button:active:after{
+	padding:0;
+	margin:0;
+	opacity:1;
+	transition:0s;
+	}
+	
