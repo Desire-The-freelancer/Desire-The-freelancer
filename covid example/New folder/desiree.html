@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="desiree.css"/>
+		
+		<script type="text/javascript" src="desiree.js">
+		</script>
+	</head>
+	
+	<body>
+		<form method="post" name="frmGood" action="form.php" onsubmit="return Validation();" >
+		 <p>name <input type="text" name="txtName" id="NameId"/> </p>
+		  <p><label>comment</label>
+		  <textarea name="taComment" cols="10" rows="10">comment here </textarea> </p>
+		  
+		  <p> <input type="submit" value="Submit"/>
+		   <p> <input type="button" value="Close"
+		        onclick="alert(Valid(document.frmGood.txtName.value))"/>
+		</form>
+	</body>
+</html>
