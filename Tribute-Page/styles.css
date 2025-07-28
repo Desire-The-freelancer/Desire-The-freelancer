@@ -1,0 +1,47 @@
+body{
+  font-family:Arial;
+  background-color:lightgrey;
+}
+
+h1, #AT, h2
+{
+  text-align:center;
+}
+
+#img-div{
+background-color:white;
+padding-bottom:10px;
+}
+
+#image{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin:0 auto;
+}
+
+#img-caption{
+  text-align:center;
+  margin: 5px 0;
+}
+
+#tribute-info{
+  margin:10px auto;
+  min-width: 200px;
+  max-width:500px;
+}
+
+#tribute-link-info{
+  font-weight:bold;
+  text-align:center;
+}
+
+ul{margin-left: -10px}
+li{
+  margin:15px 0;
+  line-height:24px;}
+
+li > span{
+  color:blue;
+  font-weight:bold;
+}

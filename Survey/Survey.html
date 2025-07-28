@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Naruto Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">Naruto Survey Form</h1>
+
+    <p id="description">Thank you for taking out your own time to answer this survey about the popupar anime series Naruto.</p>
+
+    <form id="survey-form" method="post">
+      <label id="name-label" for="name">Name: <input id="name" type="text" required placeholder="Name"></label>
+
+      <label id="email-label" for="email">Email: <input id="email" type="email" required placeholder="Email"></label>
+
+      <label id="number-label" for="age">Age: <input id="age" type="number" min="10" max="100" required placeholder="Age"></label>
+
+      <label> How did you about the survey
+        <select id="dropdown">
+          <option value="0">(Select option)</option>
+          <option value="1">Youtube Naruto channel</option>
+          <option value="2">Twitter</option>
+		  <option value="3">Naruto Forum</option>
+		  <option value="4">Other</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <legend>Which one is better?</legend>
+        <label><input type="radio" name="naruto" checked> Young Naruto</label>
+
+        <label><input type="radio" name="naruto"> Naruto Shuppuden</label>
+      </fieldset>
+        
+      <label class="character-selection">Select Characters that deserved more screen-time 
+	    <label><input type="checkbox"> Rock Lee</label>
+		<label><input type="checkbox"> Neji Hyuga</label>
+		<label><input type="checkbox"> Mighty Guy</label>
+		<label><input type="checkbox"> Hidan</label>
+		<label><input type="checkbox"> Diedara </label>
+		<label><input type="checkbox"> Kisame</label>
+		<label><input type="checkbox"> Jiraya</label>
+		<label><input type="checkbox"> Orochimaru</label>
+		<label><input type="checkbox"> Sai</label>
+	  </label>
+
+      <label>Whose your favourite character and why? 
+	    <textarea min="20" placeholder="Enter your favourite character" rows="4" required></textarea>
+	  </label>
+
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>

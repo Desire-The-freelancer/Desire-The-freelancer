@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UFT-8">
+    <title>HTML Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <main id="main-doc" >
+		<!--Introduction-->
+      <section class="main-section" id="Introduction">
+        <header>
+          <h1>Introduction</h1>
+        </header>
+		
+		<h2>HTML: HyperText Markup Language </h2>
+        <p>
+		  <b>HTML</b> (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. 
+		  Other technologies besides HTML are generally used to describe a web page's appearance/presentation <code>(CSS)</code> or 
+		  functionality/behavior <code>(JavaScript)</code>.
+		</p>
+		
+		<p>
+		  <code>"Hypertext"</code> refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. 
+		  By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.
+		</p>
+		
+		<p>
+		  HTML uses <code>"markup"</code> to annotate text, images, and other content for display in a Web browser. 
+		  HTML markup includes special "elements" such as <span>< head >, < title >, < body >, < header >, < footer >, 
+		  < article >, < section >, < p >, < div >, < span >, < img >, < aside >, < audio >, < canvas >, < datalist >, < details >, < embed >, < nav >, < search >, < output >, < progress >, < video >, < ul >, < ol >, < li ></span> and many others.
+		</p>
+		
+		<p>
+		  An HTML element is set off from other text in a document by "tags", which consist of the element name surrounded by <code>"<" and ">"</code>. 
+		  The name of an element inside a tag is case-insensitive. That is, it can be written in uppercase, lowercase, or a mixture. 
+		  For example, the < title > tag can be written as <span>< Title >, < TITLE ></span>, or in any other way. However, the convention and recommended practice is to write tags in lowercase.
+		</p>
+		
+      </section>
+	  
+	  <!--Key_Resources-->
+	  <section class="main-section" id="Key_Resources">
+	    <header>
+		  <h1>Key Resources</h1>
+		</header>
+		
+		<h2>HTML Introduction</h2>
+		<p>If you're new to web development, be sure to read our HTML Basics article to learn what HTML is and how to use it.</p>
+		
+		<h2>HTML Tutorials</h2>
+		<p>For articles about how to use HTML, as well as tutorials and complete examples, check out our HTML Learning Area.</p>
+		
+		<h2>HTML Reference</h2>
+		<p>In our extensive HTML reference section, you'll find the details about every element and attribute in HTML.</p>
+		
+	
+	  </section>
+	  
+	  <!--Tutorials-->
+      <section class="main-section" id="Tutorials">
+        <header><h1>Tutorials</h1></header>
+		<p>
+		  Our HTML <span>Learning Area</span> features multiple modules that teach HTML from the ground up — no previous knowledge required.
+		</p>
+		
+		<div class="Tutorials-info">
+		  <h2>Introduction to HTML</h2>
+		  <p>
+		    This module sets the stage, getting you used to important concepts and syntax such as looking at applying HTML to text,
+			how to create hyperlinks, and how to use HTML to structure a web page.
+		  </p>
+		</div>
+		
+		<div class="Tutorials-info">
+		  <h2>Multimedia and embedding</h2>
+		  <p>
+		    This module explores how to use HTML to include multimedia in your web pages, including the different ways that images can be included,
+			and how to embed video, audio, and even entire other webpages.
+		  </p>
+		</div>
+		
+		<div class="Tutorials-info">
+		  <h2>HTML tables</h2>
+		  <p>
+		    Representing tabular data on a webpage in an understandable, accessible way can be a challenge. 
+			This module covers basic table markup, along with more complex features such as implementing captions and summaries.
+		  </p>
+		</div>
+		
+		<div class="Tutorials-info">
+		  <h2>HTML forms</h2>
+		  <p>
+		    Forms are a very important part of the Web — these provide much of the functionality you need for interacting with websites, 
+			e.g. registering and logging in, sending feedback, buying products, and more. This module gets you started with creating the client-side/front-end parts of forms.
+		  </p>
+		</div>
+		
+		<div class="Tutorials-info">
+		  <h2>Use HTML to solve common problems</h2>
+		  <p>
+		    Provides links to sections of content explaining how to use HTML to solve very common problems when creating a web page: 
+			dealing with titles, adding images or videos, emphasizing content, creating a basic form, etc.
+		  </p>
+		</div>
+		
+      </section>
+
+	  <!--Advanced_Topics-->
+      <section class="main-section" id="Advanced_Topics">
+        <header><h1>Advanced Topics</h1></header>
+		<ul>
+		 <h2>CORS enabled images</h2>
+		 <li>
+		   The crossorigin attribute, in combination with an appropriate CORS header, allows images defined by the <span>< img > </span> 
+		   element to be loaded from foreign origins and used in a <span>< canvas > </span> element as if they were being loaded from the current origin.
+		 </li>
+		 
+		 <h2>CORS settings attributes</h2>
+		 <li>
+		  Some HTML elements that provide support for CORS, such as <span>< img > </span> or <span>< video > </span>, have a crossorigin attribute (crossOrigin property), 
+		  which lets you configure the CORS requests for the element's fetched data.
+		 </li>
+		 
+		 <h2>Preloading content with rel="preload"</h2>
+		 <li>
+		  The preload value of the  <span>< link > </span> element's rel attribute allows you to write declarative fetch requests in your HTML  <span>< head > </span>, 
+		  specifying resources that your pages will need very soon after loading, which you therefore want to start preloading early in the lifecycle of a page load, 
+		  before the browser's main rendering machinery kicks in. This ensures that they are made available earlier and are less likely to block the page's first render, leading to performance improvements. 
+		  This article provides a basic guide to how preload works.
+		 </li>
+		</ul>
+		
+      </section>
+
+	  <!--Reference-->
+      <section class="main-section" id="Reference">
+        <header><h1>Reference</h1></header>
+		<ul>
+		  <p><b>All the information for:</b></p>
+		  <li>HTML was taken from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN</a></li>
+		  <li>CSS was taken from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN</a></li>
+		</ul>
+
+      </section>
+	  
+	  <!--Navigation bar-->
+      <nav id="navbar">
+        <header><h1>HTML Documentation</h1></header>
+		<ul>
+			<li><a class="nav-link" href="#Introduction">Introduction</a></li>
+			<li><a class="nav-link" href="#Key_Resources">Key Resources</a></li>
+			<li><a class="nav-link" href="#Tutorials">Tutorials</a></li>
+			<li><a class="nav-link" href="#Advanced_Topics">Advanced Topics</a></li>
+			<li><a class="nav-link" href="#Reference">Reference</a></li>
+		</ul>
+      </nav>
+    </main>
+  </body>
+</html>
