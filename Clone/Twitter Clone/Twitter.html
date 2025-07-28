@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Twitter Clone</title>
+		
+		<link rel="stylesheet" href="styles/header.css">
+		<link rel="stylesheet" href="styles/general.css">
+		<link rel="stylesheet" href="styles/sidebar.css">
+		<link rel="stylesheet" href="styles/timeline.css">
+		
+		<style>
+			
+		</style>
+	</head>
+	
+	<body>
+		<!--HEADER-->
+		<header class="header">
+		
+			<div class="info">
+				<div class="follow"> <span>For You</span></div>
+				<div class="follow"> <span>Following</span></div>
+				<div class="setting">
+					<img class="setting-icon" src="Twitter-icons/twitter-setting.png">
+					<div class="tooltip">Timeline setting</div>
+				</div>
+			</div>
+		</header>
+		
+		<!--SIDEBAR-->
+		<nav class="sidebar">
+			<div class="twitter-logo">
+				<!--Logo-->
+				<img src="Twitter-icons/twitter-logo.png">
+				
+			</div>
+			
+			<div class="sidebar-icons">
+				<!--Home-->
+				<img src="Twitter-icons/twitter-home.png">
+				<div class="tooltip">Home</div>
+			</div>
+			
+			<div class="sidebar-icons">
+				<!--Search-->
+				<img src="Twitter-icons/twitter-search.png">
+				<div class="tooltip">Search</div>
+			</div>
+			
+			<div class="sidebar-icons">
+				<!--Notification-->
+				<img src="Twitter-icons/twitter-notification.png">
+				<div class="tooltip">Notification</div>
+			</div>
+			
+			<div class="sidebar-icons">
+				<!--Messages-->
+				<img src="Twitter-icons/twitter-message.png">
+				<div class="tooltip">Messages</div>
+			</div>
+			
+			<div class="sidebar-icons">
+				<!--Lists-->
+				<img src="Twitter-icons/twitter-lists.png">
+				<div class="tooltip">Lists</div>
+			</div>
+			
+			<div class="sidebar-icons">
+				<!--Premium-->
+				<img src="Twitter-icons/twitter-logo.png">
+				<div class="tooltip">Premium</div>
+			</div>
+			
+			<div class="sidebar-icons">
+				<!--Profile-->
+				<img src="Twitter-icons/twitter-profile.png">
+				<div class="tooltip">Profile</div>
+			</div>
+			
+			<div class="sidebar-icons">
+				<!--More-->
+				<img src="Twitter-icons/twitter-more.png">
+				<div class="tooltip">More</div>
+			</div>
+			
+			<div class="Posts" >
+				<!--Post-->
+				<img class="Posts-pic" src="Twitter-icons/twitter-post.png">
+				<div class="tooltip">Post</div>
+			</div>
+			
+			<div class="Accounts">
+				<!--Accounts-->
+				<div>
+					<img class="Account-image" src="images/my-channel.jpeg">
+				</div>
+				
+				<div class="tooltip">Account</div>
+				
+				<div class="AccountInfos" style="margin-left:5px; flex:1">
+					<p style="font-weight:700">SimpleDev</p>
+					<p style="color:grey; margin-top:2px;">@SimpleDev</p>
+				</div>
+				<div class="AccountInfo">
+					<img src="Twitter-icons/more.png">
+				</div>
+			</div>
+		</nav>
+		
+		<main>
+			<!--Post(what's happening)-->
+			<section class="Twitter-timeline">
+			
+				<div class="main-section">
+					<!--Posting Section-->
+					<div class="Post">
+						<div class="Post-Profile">
+							<img class="Post-Profile-pic" src="images/my-channel.jpeg">
+						</div>
+						
+						<div class="Post-info">
+						
+							<div>
+								<input class="Post-type-info" type="text" placeholder="What's happening?">
+							</div>
+							
+							<div class="post-audience">
+								Everyone can reply
+							</div>
+							
+							<!--Post attachment-->
+							<div class="Post-attach">
+								<div class="Post-info-extra">
+									<div>
+										<img src="Twitter-icons/twitter-gallery.png">
+										<div class="tooltip">Gallery</div>
+									</div>
+									
+									<div>
+										<img src="Twitter-icons/twitter-gif.png">
+										<div class="tooltip">Gif</div>
+									</div>
+									
+									<div class="Polls-Schedule">
+										<img src="Twitter-icons/twitter-poll.png">
+										<div class="tooltip">Polls</div>
+									</div>
+									
+									<div>
+										<img src="Twitter-icons/twitter-emoji.png">
+										<div class="tooltip">Emoji</div>
+									</div>
+									
+									<div class="Polls-Schedule">
+										<img src="Twitter-icons/twitter-schedule.png">
+										<div class="tooltip">Schedule</div>
+									</div>
+									
+									<div>
+										<img src="Twitter-icons/twitter-tag.png">
+										<div class="tooltip">Tag Location</div>
+									</div>
+									
+								</div>
+								
+								<div>
+									<button class="post-button">Post</button>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+					<!--timeline content-->
+					<div class="timeline-posts">
+						<div class="Post-Profile">
+							<img class="Post-Profile-pic" src="images/Momo.jpg">
+							<div class="tooltip">
+								<div class="tooltip-profileFollow">
+									<img class="Post-Profile-pic" src="images/Momo.jpg">
+									<button class="btnSubscribe">Follow</button>
+								</div>
+								
+								<div class="tooltip-username"> 
+									<div style="font-weight:700">Momo Lieutenant</div>
+									<div style="color:grey;">@MomoTheSoulReaper</div> 
+								</div>
+								
+								<div class="tooltip-bio">
+									Aizen's most trusted lieutenant and master of kido.
+								</div>
+								
+								<div class="tooltip-followers">
+									<div>
+										<b>5k</b> 
+										<span>Following</span>
+									</div>
+									<div>
+										<b>19k</b> 
+										<span>Followers</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="timeline-posted-content">
+							<!--username and screen names-->
+							<!--Someone else's post-->
+							<div class="timeline-posted-content-username">	
+								<div class="username-section"> 
+									<div style="font-weight:700">Momo Lieutenant</div>
+									<div style="color:grey; margin-left: 5px;">@MomoTheSoulReaper</div> 
+								</div>
+								<div class="timeline-more-info">
+									<img style="width: 20px;" src="Twitter-icons/more.png">
+									<div>More</div>
+								</div>
+							</div>
+							
+							<div>
+								I still believe Aizen is good inside, 
+								someone must be controlling him. :)
+							</div>
+							
+							<div class="timeline-posted-image">
+							`	<img src="images/Momo-bleach.jpeg">
+							</div>
+							
+							<div class="timeline-posted-image-review">
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/comment.png">
+									<div>189</div>
+									<div class="tooltip">Comment</div>
+								</div>
+								
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/repost.png">
+									100
+									<div class="tooltip">Repost</div>
+								</div>
+								
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/likes.png">
+									1,3k
+									<div class="tooltip">Likes</div>
+								</div>
+								
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/views.png">
+									22K
+									<div class="tooltip">Views</div>
+								</div>
+								
+								<div class="bookmark-share-section">
+									<div class="timeline-posted-image-review-icons">
+										<img style="margin-right:10px" src="Twitter-icons/bookmark.png">
+										<div class="tooltip">Bookmark</div>
+									</div>
+									<div class="timeline-posted-image-review-icons">
+										<img src="Twitter-icons/share.png">
+										<div class="tooltip">Share</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!--post #2-->
+					<div class="timeline-posts">
+						<div class="Post-Profile">
+							<img class="Post-Profile-pic" src="images/Rengie.jpg">
+							<div class="tooltip">
+								<div class="tooltip-profileFollow">
+									<img class="Post-Profile-pic" src="images/Rengie.jpg">
+									<button class="btnSubscribe">Follow</button>
+								</div>
+								
+								<div class="tooltip-username"> 
+									<div style="font-weight:700">Future Captain</div>
+									<div style="color:grey;">@Lieutenant_Rengie</div> 
+								</div>
+								
+								<div class="tooltip-bio">
+									Lieutenant of the best squad ever, with the best 
+									Captain ever. Unlocked my bankai so y'all better 
+									watch out
+								</div>
+								
+								<div class="tooltip-followers">
+									<div>
+										<b>9k</b> 
+										<span>Following</span>
+									</div>
+									<div>
+										<b>157k</b> 
+										<span>Followers</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="timeline-posted-content">
+							<!--username and screen names-->
+							<!--Someone else's post-->
+							<div class="timeline-posted-content-username">	
+								<div class="username-section"> 
+									<div style="font-weight:700">Future Captain</div>
+									<div style="color:grey; margin-left: 5px;">@Lieutenant_Rengie</div> 
+								</div>
+								<div class="timeline-more-info">
+									<img style="width: 20px;" src="Twitter-icons/more.png">
+									<div>More</div>
+								</div>
+							</div>
+							
+							<div>
+								Finally unlocked my Bankai,
+								Captain Byakuya better watch himself :/
+							</div>
+							
+							<div class="timeline-posted-image">
+							`	<img src="images/Rengie-bankai.jpeg">
+							</div>
+							
+							<div class="timeline-posted-image-review">
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/comment.png">
+									<div>200</div>
+									<div class="tooltip">Comment</div>
+								</div>
+								
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/repost.png">
+									500
+									<div class="tooltip">Repost</div>
+								</div>
+								
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/likes.png">
+									5,9k
+									<div class="tooltip">Likes</div>
+								</div>
+								
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/views.png">
+									513K
+									<div class="tooltip">Views</div>
+								</div>
+								
+								<div class="bookmark-share-section">
+									<div class="timeline-posted-image-review-icons">
+										<img style="margin-right:10px" src="Twitter-icons/bookmark.png">
+										<div class="tooltip">Bookmark</div>
+									</div>
+									<div class="timeline-posted-image-review-icons">
+										<img src="Twitter-icons/share.png">
+										<div class="tooltip">Share</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!--Post3-->
+					<div class="timeline-posts">
+					
+						<div class="Post-Profile">
+							<img class="Post-Profile-pic" src="images/relaxing-cat.jpg">
+							<div class="tooltip">
+								<div class="tooltip-profileFollow">
+									<img class="Post-Profile-pic" src="images/relaxing-cat.jpg">
+									<!--Following-->
+									<button class="btnSubscribe" 
+											style="background-color:white;
+												   color:black;
+												   border:1px solid black;
+												   font-weight:700">
+										Following</button>
+								</div>
+								
+								<div class="tooltip-username"> 
+									<div style="font-weight:700">The Relaxing cat</div>
+									<div style="color:grey;">@Relaxingcat</div> 
+								</div>
+								
+								<div class="tooltip-bio">
+									
+								</div>
+								
+								<div class="tooltip-followers">
+									<div>
+										<b>3k</b> 
+										<span>Following</span>
+									</div>
+									<div>
+										<b>2k</b> 
+										<span>Followers</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="timeline-posted-content">
+							<!--username and screen names-->
+							<!--Someone else's post-->
+							<div class="timeline-posted-content-username">	
+								<div class="username-section"> 
+									<div style="font-weight:700">The relaxing cat</div>
+									<div style="color:grey; margin-left: 5px;">@RelaxingCat</div> 
+								</div>
+								<div class="timeline-more-info">
+									<img style="width: 20px;" src="Twitter-icons/more.png">
+									<div>More</div>
+								</div>
+							</div>
+							
+							<div>
+								bleach is overrated if you ask me :/
+							</div>
+							
+							<div class="timeline-posted-image">
+							`	
+							</div>
+							
+							<div class="timeline-posted-image-review">
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/comment.png">
+									<div>20</div>
+									<div class="tooltip">Comment</div>
+								</div>
+								
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/repost.png">
+									5
+									<div class="tooltip">Repost</div>
+								</div>
+								
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/likes.png">
+									59
+									<div class="tooltip">Likes</div>
+								</div>
+								
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/views.png">
+									513
+									<div class="tooltip">Views</div>
+								</div>
+								
+								<div class="bookmark-share-section">
+									<div class="timeline-posted-image-review-icons">
+										<img style="margin-right:10px" src="Twitter-icons/bookmark.png">
+										<div class="tooltip">Bookmark</div>
+									</div>
+									<div class="timeline-posted-image-review-icons">
+										<img src="Twitter-icons/share.png">
+										<div class="tooltip">Share</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<!--Post 4-->
+					<div class="timeline-posts">
+						<div class="Post-Profile">
+							<img class="Post-Profile-pic" src="images/Rangiku.jpg">
+							<div class="tooltip">
+								<div class="tooltip-profileFollow">
+									<img class="Post-Profile-pic" src="images/Rangiku.jpg">
+									
+									<button class="btnSubscribe">
+										Follow
+									</button>
+								</div>
+								
+								<div class="tooltip-username"> 
+									<div style="font-weight:700">Hottest Lieutenant</div>
+									<div style="color:grey;">@Sexiest_Lieutenant_Rangiku</div> 
+								</div>
+								
+								<div class="tooltip-bio">
+									hey :) its your most attractive lieutenant here|
+									Lover of drinks| boys| SHOPPING| all things earth
+								</div>
+								
+								<div class="tooltip-followers">
+									<div>
+										<b>2k</b> 
+										<span>Following</span>
+									</div>
+									<div>
+										<b>559k</b> 
+										<span>Followers</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="timeline-posted-content">
+							<!--username and screen names-->
+							<!--Someone else's post-->
+							<div class="timeline-posted-content-username">	
+								<div class="username-section"> 
+									<div style="font-weight:700">Hottest Lieutenant</div>
+									<div style="color:grey; margin-left: 5px;">@Sexiest_Lieutenant_Rangiku</div> 
+								</div>
+								<div class="timeline-more-info">
+									<img style="width: 20px;" src="Twitter-icons/more.png">
+									<div>More</div>
+								</div>
+							</div>
+							
+							<div>
+								I love shopping in the world of the living, 
+								its so relaxing and amazing, some many things to choose from. ;)
+							</div>
+							
+							<div class="timeline-posted-image">
+							`	<img src="images/Rangiku-shopping.jpeg">
+								
+							</div>
+							
+							<div class="timeline-posted-image-review">
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/comment.png">
+									<div>1k</div>
+									<div class="tooltip">Comment</div>
+								</div>
+								
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/repost.png">
+									3k
+									<div class="tooltip">Repost</div>
+								</div>
+								
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/likes.png">
+									60k
+									<div class="tooltip">Likes</div>
+								</div>
+								
+								<div class="timeline-posted-image-review-icons">
+									<img src="Twitter-icons/views.png">
+									987K
+									<div class="tooltip">Views</div>
+								</div>
+								
+								<div class="bookmark-share-section">
+									<div class="timeline-posted-image-review-icons">
+										<img style="margin-right:10px" src="Twitter-icons/bookmark.png">
+										<div class="tooltip">Bookmark</div>
+									</div>
+									<div class="timeline-posted-image-review-icons">
+										<img src="Twitter-icons/share.png">
+										<div class="tooltip">Share</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+					<!--Subsection-->
+				<div class="sub-section">
+					
+					<div class="twitter-search"><input class="searchBar" type="text" placeholder="Search"></div>
+					
+					<div class="subscribe">
+						<h1>Subscribe to Premium</h1>
+						<p>Subscribe to unlock new features and if
+						   eligible, receive a share of ads revenue.</p>
+						   
+						<button class="btnSubscribe">Subscribe</button>
+					</div>
+					
+					<div class="trends">	
+						<h1>Trends for you</h1>
+						<div class="trend-info">
+						<!--Start of trends-->
+							<div>
+								<p style="color:grey">Trending in South Africa</p>
+								<p style="font-weight:700">Sies</p>
+								<p style="color:grey">1,061 posts</p>	
+							</div>
+							
+							<div class="timeline-more-info">
+								<img style="width: 18px;" src="Twitter-icons/more.png">
+							</div>
+						</div>
+						
+						<div class="trend-info">
+							<div>
+								<p style="color:grey">Entertainment Trending</p>
+								<p style="font-weight:700">Elsa</p>
+								<p style="color:grey">21K posts</p>	
+							</div>
+							
+							<div class="timeline-more-info">
+								<img style="width: 18px;" src="Twitter-icons/more.png">
+							</div>
+						</div>
+						
+						<div class="trend-info">
+							<div>
+								<p style="color:grey">Trending in South Africa</p>
+								<p style="font-weight:700">#Blewit</p>
+								<p style="color:grey"></p>	
+							</div>
+							
+							<div class="timeline-more-info">
+								<img style="width: 18px;" src="Twitter-icons/more.png">
+							</div>
+						</div>
+						
+						<div class="trend-info">
+							<div>
+								<p style="color:grey">Trending in South Africa</p>
+								<p style="font-weight:700">Oppenheimers</p>
+								<p style="color:grey">2,274 posts</p>	
+							</div>
+							
+							<div class="timeline-more-info">
+								<img style="width: 18px;" src="Twitter-icons/more.png">
+							</div>
+						</div>
+						<!--Trends-->
+						
+						<div class="show-more"> 
+							Show more 
+						</div>
+					</div>
+					
+					<!--Who to follow-->
+					<div class="Who-to-follow">
+						<h1>Who to follow</h1>
+						<!-- start of Follow-->
+						<div class="account-to-follow">
+							<div><img class="Post-Profile-pic" src="images/Momo.jpg"></div>
+							
+							<div style= "flex:1">
+									<p style="font-weight:700">Momo Lieutenant</p>
+									<p style="color:grey">@MomoTheSoulReaper</p>
+							</div>
+							
+							<div>
+								<button>Follow</button>
+							</div>
+						</div>
+						
+						<div class="account-to-follow">
+							<div><img class="Post-Profile-pic" src="images/Rengie.jpg"></div>
+							
+							<div style= "flex:1">
+									<p style="font-weight:700">Future Captain</p>
+									<p style="color:grey">@Lieutenant_Rengie</p>
+							</div>
+							
+							<div>
+								<button>Follow</button>
+							</div>
+						</div>
+						
+						<div class="account-to-follow">
+							<div><img class="Post-Profile-pic" src="images/Rangiku.jpg"></div>
+							
+							<div style= "flex:1">
+									<p style="font-weight:700">Hottest Lieutenant</p>
+									<p style="color:grey">@Sexiest_Lieutenant_Rangiku</p>
+							</div>
+							
+							<div>
+								<button>Follow</button>
+							</div>
+						</div>
+						
+						<!--Follow end-->
+						
+						<div class="show-more"> 
+							Show more 
+						</div>
+					</div>
+					
+					<div class="terms-privacy">
+						<div>Terms of Service </div> 
+						<div>Privacy Policy </div>  
+						<div>Cookie Policy </div>
+						<div>Accessibility </div> 
+						<div>Ads info </div> 
+						<div>More... </div>  
+						<div>© 2024 X Corp </div>
+					</div>
+					
+					<div class="messages">
+						<div style="font-weight:700">Messages</div>
+						
+						<div style="display:flex;">
+							<div class="new-message-pic">
+								<img style="width:20px;" 
+									src="Twitter-icons/new-message.png">
+								<div>New message</div>
+							 </div>
+							 
+							 <div class="expend-pic">
+								<img style="width:20px;" 
+									src="Twitter-icons/expands.png">
+								<div>Expand</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+		</main>
+	</body>
+</html>
