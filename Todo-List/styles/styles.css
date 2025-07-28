@@ -1,0 +1,93 @@
+/*Twitter blue = rgb(29 161 242)
+  very light grey = rgb(225, 232, 237)*/
+
+ h1{margin:0;} 
+ 
+header{
+	background-color: rgb(29 161 242);
+	color:white;
+	padding:15px;
+	width: 450px;
+	
+	position:absolute;
+	left:0;
+	top:0;
+	
+	}
+	
+.things-to-do{
+	
+	margin-top:70px;
+	padding:20px;
+	width:450px;
+	}
+	
+.container{ 
+	display:block;
+	
+	font-family:Arial;
+	font-size:18px;
+	padding: 15px 0;
+	border-bottom:1px solid rgb(225, 232, 237);
+	
+	position:relative;
+	cursor:pointer;
+	}
+	
+/*hide default check-box
+.container input{
+	position: absolute;
+	opacity:1;
+	left:0px;
+	
+	z-index:1;
+	height:18px; width:18px;}*/
+.container input[type=checkbox]{
+	visibility:hidden;
+}	
+
+	
+/*Custom check-box (span)*/
+.check-box{
+	border-radius: 10px;
+	cursor:pointer;
+	position:absolute;
+	right:0px;
+	background-color:#eee;
+	width: 25px; height:25px;
+	
+	}	
+	
+/*on mouse-over */
+.container:hover input ~
+.check-box{
+	background-color:#ccc}
+
+	/*when checked*/
+.container input:checked ~ 
+.check-box{
+	background-color:#2196F3;
+	}
+	
+	/*Indicator or checkmark*/
+.container:after{
+	content: "";
+	position: absolute:;
+	display:none;}
+	
+	/*display*/
+.container input:checked ~
+.check-box:after{
+	display:block;
+	}
+
+.container .check-box:after{
+	right:9px;
+	top:5px;
+	width:5px;
+	height:10px;
+	border: solid white;
+	border-width: 3px 3px 3px 3px;
+	box-sizing:border-box;
+	
+	}
